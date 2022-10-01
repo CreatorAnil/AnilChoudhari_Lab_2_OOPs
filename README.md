@@ -30,3 +30,11 @@
 3. Tomato (1.00 USD)
 4. Jalapeno (1.00 USD)
 5. Spinach (1.00 USD
+
+## Pasta
+### Pasta comes in 2 flavors
+1. White sauce (10 USD)
+2. Red sauce (20 USD)
+### Pasta comes in 3 types (Any type can be chosen with no change in cost.)
+1. Penne
+2. Ditalini
