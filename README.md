@@ -12,19 +12,19 @@
 ### 5. Take payments from the customer
 
 ## Pizza
-Pizza has 3 sizes
+
+### Pizza has 3 sizes
 1. Large
 2. Medium
 3. Small
-Pizza comes in 2 types of crust (Any type of crust can be chosen with no change in cost)
+### Pizza comes in 2 types of crust (Any type of crust can be chosen with no change in cost)
 1. Thin
 2. Thick
-Pizza comes in 3 types of flavor (All flavors have different cost). For simplicity the price of pizza
-doubles per size. For e.g.
+### Pizza comes in 3 types of flavor (All flavors have different cost). For simplicity the price of pizza doubles per size. For e.g.
 1. Vegetarian (20 USD SMALL, 40 USD MEDIUM, 60 USD LARGE).
 2. Non-veg (25 USD SMALL, 50 USD MEDIUM, 75 USD LARGE)
 3. Vegan (15 USD SMALL, 30 USD MEDIUM, 45 USD LARGE)
-Pizza can have following toppings (Please note each toppings has some extra cost)
+### Pizza can have following toppings (Please note each toppings has some extra cost)
 1. Cheese (1.00 USD)
 2. Mushroom (1.00 USD)
 3. Tomato (1.00 USD)
