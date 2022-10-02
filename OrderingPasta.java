@@ -17,10 +17,10 @@ public class OrderingPasta {
 		for(Pasta pasta: pastas) {
 			switch(pasta.getFlavors()) {
 			case "WhiteSauce":
-				totalOrderCost = whiteSauce;
+				totalOrderCost += whiteSauce;
 				break;
 			case "RedSauce":
-				totalOrderCost = redSauce;
+				totalOrderCost += redSauce;
 			}
 		}
 		
@@ -30,9 +30,9 @@ public class OrderingPasta {
 		return totalOrderCost;
 	}
 
-	public void printOrder() {
+	public void displayOrder() {
 		for(Pasta pasta:pastas) {
-			System.out.println("Order of pasta with flavors "+pasta.getFlavors()+" and type of"+pasta.getPastaTypes());
+			System.out.println("Order of pasta with flavors "+pasta.getFlavors()+" and type of "+pasta.getPastaTypes());
 			System.out.println("");
 		}
 		System.out.print("total order cost "+getTotalOrderCost());

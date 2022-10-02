@@ -25,37 +25,37 @@ public class OrderingPizza {
 		case "Vegan": 
 			switch(pizza.getSizes()) {
 			case "Large":
-				totalOrderCost = veganCost * 3;
+				totalOrderCost += veganCost * 3;
 				break;
 			case "Medium":
-				totalOrderCost = veganCost * 2;
+				totalOrderCost += veganCost * 2;
 				break;
 			case "Small":
-				totalOrderCost = veganCost * 1;
+				totalOrderCost += veganCost * 1;
 				break;
 			}
 		case "Vegetarian":
 			switch(pizza.getSizes()) {
 			case "Large":
-				totalOrderCost = vegetarianCost * 3;
+				totalOrderCost += vegetarianCost * 3;
 				break;
 			case "Medium":
-				totalOrderCost = vegetarianCost * 2;
+				totalOrderCost += vegetarianCost * 2;
 				break;
 			case "Small":
-				totalOrderCost = vegetarianCost * 1;
+				totalOrderCost += vegetarianCost * 1;
 				break;
 			}
 		case "Nonveg":
 			switch(pizza.getSizes()) {
 			case "Large":
-				totalOrderCost = nonVeg * 3;
+				totalOrderCost += nonVeg * 3;
 				break;
 			case "Medium":
-				totalOrderCost = nonVeg * 2;
+				totalOrderCost += nonVeg * 2;
 				break;
 			case "Small":
-				totalOrderCost = nonVeg * 1;
+				totalOrderCost += nonVeg * 1;
 				break;
 			}
 		}
@@ -72,7 +72,7 @@ public class OrderingPizza {
 		return totalOrderCost;
 	}
 	
-	public void printOrder() {
+	public void displayOrder() {
 		for( Pizza pizza: pizzas) {
 			System.out.println("Ordered a pizza size:  " + pizza.getSizes()+" flavors: "+ pizza.getFlavors()+" crust: "+ pizza.getCrusts()+" with topping "+pizza.getToppings());
 			System.out.println("");

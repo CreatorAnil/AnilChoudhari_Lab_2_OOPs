@@ -20,10 +20,10 @@ public class Menu {
 				
 				int totalPizzas = scanner.nextInt();
 				
+				
+				
 				for (int i=0; i< totalPizzas;++i) {
-					
 					Pizza pizza = new Pizza();
-					
 					ArrayList<String> toppings = new ArrayList<>();
 					
 					String pizzaSize;
@@ -52,14 +52,13 @@ public class Menu {
 					}
 					
 					pizza.setToppings(toppings);
-					
 					pizzas.add(pizza);
 					
 				}
 				
 				OrderingPizza order = new OrderingPizza(pizzas);
 				order.calculateTotalOrderCost();
-				order.printOrder();
+				order.displayOrder();
 				
 			}
 				
@@ -87,7 +86,7 @@ public class Menu {
 				
 				OrderingPasta order = new OrderingPasta(pastas);
 				order.calculateTotalOrderCost();
-				order.printOrder();
+				order.displayOrder();
 				
 			}
 				
