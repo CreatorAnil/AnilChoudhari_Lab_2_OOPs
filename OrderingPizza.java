@@ -16,7 +16,7 @@ public class OrderingPizza {
 		
 		final String sizes;
 		
-		final double veganCost = 15;
+		final int veganCost = 15;
 		final int vegetarianCost=20;
 		final int nonVeg= 25;
 	
