@@ -52,13 +52,14 @@ public class Menu {
 					}
 					
 					pizza.setToppings(toppings);
+					
 					pizzas.add(pizza);
 					
 				}
 				
 				OrderingPizza order = new OrderingPizza(pizzas);
 				order.calculateTotalOrderCost();
-				order.printOrderSummary();
+				order.printOrder();
 				
 			}
 				
@@ -71,8 +72,22 @@ public class Menu {
 				for(int i=0 ; i<totalPasta;++i) {
 					 Pasta pasta = new Pasta();
 					 
-					 String 
+					 String pastaflavors;
+					 System.out.println("Enter the flavour: WhiteSauce or RedSauce");
+					 pastaflavors = scanner.next();
+					 pasta.setFlavors(pastaflavors);
+					 
+					 String pastaTypes;
+					 System.out.println("Enter the pasta types: Penne or Ditalini");
+					 pastaTypes = scanner.next();
+					 pasta.setPastaTypes(pastaTypes);
+					 
+					 pastas.add(pasta);
 				}
+				
+				OrderingPasta order = new OrderingPasta(pastas);
+				order.calculateTotalOrderCost();
+				order.printOrder();
 				
 			}
 				
@@ -85,6 +100,8 @@ public class Menu {
 	}
 		
 		public static int menu(Scanner scanner) {
+			System.out.println("==================================================================");
+			System.out.println("==================================================================");
 			System.out.println("Welcome to Anil's franchise store");
 			System.out.println("1. Order Pizza");
 			System.out.println("2. Order Pasta");

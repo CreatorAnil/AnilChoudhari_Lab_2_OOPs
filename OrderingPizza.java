@@ -72,11 +72,13 @@ public class OrderingPizza {
 		return totalOrderCost;
 	}
 	
-	public void printOrderSummary() {
+	public void printOrder() {
 		for( Pizza pizza: pizzas) {
 			System.out.println("Ordered a pizza size:  " + pizza.getSizes()+" flavors: "+ pizza.getFlavors()+" crust: "+ pizza.getCrusts()+" with topping "+pizza.getToppings());
+			System.out.println("");
 		}
 		System.out.println("Total order cost "+ getTotalOrderCost());
+		System.out.println("");
 	}
 	
 	

@@ -30,11 +30,13 @@ public class OrderingPasta {
 		return totalOrderCost;
 	}
 
-	public void printOrderSummary() {
+	public void printOrder() {
 		for(Pasta pasta:pastas) {
 			System.out.println("Order of pasta with flavors "+pasta.getFlavors()+" and type of"+pasta.getPastaTypes());
+			System.out.println("");
 		}
 		System.out.print("total order cost "+getTotalOrderCost());
+		System.out.println("");
 	}
 	
 	
