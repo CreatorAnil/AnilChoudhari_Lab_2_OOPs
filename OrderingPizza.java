@@ -12,56 +12,51 @@ public class OrderingPizza {
 	
 	
 	public void calculateTotalOrderCost() {
-		final double costPerTopping = 1;
+
 		
-		final String sizes;
 		
-		final int veganCost = 15;
-		final int vegetarianCost=20;
-		final int nonVeg= 25;
-	
 	for (Pizza pizza: pizzas) {
 		switch ( pizza.getFlavors()) {
-		case "Vegan": 
+		case Constant.Pizza_flavor_Vegan: 
 			switch(pizza.getSizes()) {
-			case "Large":
-				totalOrderCost += veganCost * 3;
+			case (Constant.Pizza_Size_Large):
+				totalOrderCost += Constant.Pizza_flavor_Vegan_Cost * 3;
 				break;
-			case "Medium":
-				totalOrderCost += veganCost * 2;
+			case Constant.Pizza_Size_Medium:
+				totalOrderCost += Constant.Pizza_flavor_Vegan_Cost * 2;
 				break;
-			case "Small":
-				totalOrderCost += veganCost * 1;
+			case Constant.Pizza_Size_Small:
+				totalOrderCost += Constant.Pizza_flavor_Vegan_Cost * 1;
 				break;
 			}
-		case "Vegetarian":
+		case Constant.Pizza_flavor_Vegetarian:
 			switch(pizza.getSizes()) {
-			case "Large":
-				totalOrderCost += vegetarianCost * 3;
+			case (Constant.Pizza_Size_Large):
+				totalOrderCost += Constant.Pizza_flavor_Vegetarian_Cost  * 3;
 				break;
-			case "Medium":
-				totalOrderCost += vegetarianCost * 2;
+			case Constant.Pizza_Size_Medium:
+				totalOrderCost += Constant.Pizza_flavor_Vegetarian_Cost * 2;
 				break;
-			case "Small":
-				totalOrderCost += vegetarianCost * 1;
+			case Constant.Pizza_Size_Small:
+				totalOrderCost += Constant.Pizza_flavor_Vegetarian_Cost * 1;
 				break;
 			}
-		case "Nonveg":
+		case Constant.Pizza_flavor_Nonveg:
 			switch(pizza.getSizes()) {
-			case "Large":
-				totalOrderCost += nonVeg * 3;
+			case (Constant.Pizza_Size_Large):
+				totalOrderCost += Constant.Pizza_flavor_Nonveg_Cost * 3;
 				break;
-			case "Medium":
-				totalOrderCost += nonVeg * 2;
+			case Constant.Pizza_Size_Medium:
+				totalOrderCost += Constant.Pizza_flavor_Nonveg_Cost * 2;
 				break;
-			case "Small":
-				totalOrderCost += nonVeg * 1;
+			case Constant.Pizza_Size_Small:
+				totalOrderCost += Constant.Pizza_flavor_Nonveg_Cost * 1;
 				break;
 			}
 		}
 		
 		int totalToppings = pizza.getToppings().size();
-		totalOrderCost += totalToppings * costPerTopping;
+		totalOrderCost += totalToppings * Constant.Topping_Cost;
 		
 	}
 		

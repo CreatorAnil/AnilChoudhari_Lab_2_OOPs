@@ -11,16 +11,13 @@ public class OrderingPasta {
 	
 	public void calculateTotalOrderCost() {
 		
-		final int whiteSauce = 10;
-		final int redSauce   = 20;
-		
 		for(Pasta pasta: pastas) {
 			switch(pasta.getFlavors()) {
-			case "WhiteSauce":
-				totalOrderCost += whiteSauce;
+			case Constant.Pasta_flavor_WhiteSauce:
+				totalOrderCost += Constant.Pasta_flavor_WhiteSauce_cost;
 				break;
-			case "RedSauce":
-				totalOrderCost += redSauce;
+			case Constant.Pasta_flavor_RedSauce:
+				totalOrderCost += Constant.Pasta_flavor_RedSauce_cost;
 			}
 		}
 		
